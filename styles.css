@@ -1,0 +1,354 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.myheader{
+    width:100%;
+    height:100%;
+    display:block;
+    position:sticky;
+}
+
+.eventdate{
+    text-align: center;
+    background-color: grey;
+    color:whitesmoke;
+    font-size: 25px;
+    font-weight:500;
+}
+
+img{
+    width: 250px;
+    height:100px;
+}
+
+.hcontainer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    align-content:center;
+    background-color:rgb(159, 131, 131);
+}
+
+.flexrow{
+    display:flex;
+    justify-items: center;
+    align-items:center;
+}
+
+.flexcolumn{
+    display:flex;
+    flex-direction:column;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li {
+    display:inline;
+    padding:0px 10px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    padding:7px;
+  
+}
+
+nav ul li a:hover{
+    display:inline;
+    color:orangered;
+    border-bottom:2px solid orangered;
+    font-weight:bold;
+    
+}
+
+nav ul li a.active{
+   color:orangered;
+   font-weight:bold;
+   border-bottom:2px solid orangered;
+}
+
+.section1{
+    background-image: url(../images/Conference.jpg );
+    width:100%;
+    text-align:center;
+    height:300px;
+    background-image: width"100%" height"100%";
+    gap:20px;
+   
+}
+
+.section1-h1{
+  
+    color:orangered;
+    font-size:40px;
+
+}
+
+.section1-h2{
+    color:orangered;
+   
+    font-weight:bold;
+}
+
+.section1-btn{
+    background-color: orange;
+    color:azure;
+    border-radius: 5px;
+    padding:8px;
+    font-weight:bold;
+    
+}
+
+.section1-date{
+    color:white;
+    font-weight:bold;
+    font-size:1.3em;
+}
+
+.Alert{
+    font-weight:bold;
+    color:aquamarine;
+}
+
+.section2{
+    padding:40px;
+    text-align:center;
+    gap:20px;
+   
+}
+
+.sectionhead{
+    color:orangered;
+    text-align:center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.sectiontext{
+   font-size:25px; 
+}
+
+.secwidth{
+    width:70%;
+    padding-left: 20%;
+    text-wrap:wrap;
+}
+
+@media screen and (max-width:900px){
+    .section3-div2{
+    display:grid;
+    justify-content: center;
+    align-items:center;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto;
+    padding:30px;
+    text-wrap: wrap;
+    
+}
+
+}
+
+.greybg{
+    background-color: rgb(228, 223, 223);
+}
+
+
+.section3-div2{
+    display:grid;
+    justify-content: center;
+    align-items:center;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto;
+    padding:30px;
+
+}
+
+.grid-item{
+    width:200px;
+    height:200px;
+    text-align:center;
+
+    text-wrap:wrap;
+    gap:100px;
+    
+}
+
+.section3{
+    padding-top:30px;
+}
+
+.section4{
+    margin-top:30px;
+    padding-bottom:50px;
+    text-align: justify;
+}
+
+.section4-div1{
+    color:orangered
+}
+
+.section4-div2{
+    font-weight:bold;
+    padding:50px;
+    display:grid;
+    align-items:center;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap:50px;
+}
+
+.sec5text{
+
+  text-align: center;
+  padding-top:30px;
+  font-weight:500;
+  font-size:1.2em;
+
+}
+
+.sec5sub{
+      color:orangered;
+    
+       text-align: center;
+       padding-top:50px;
+       gap:200px;
+       font-weight:700;
+       padding-left:30%;
+
+}
+
+.list{
+   display:flex;
+    flex-direction:column;
+  
+}
+
+.black{
+    color:black;
+    padding:20px;
+}
+
+.mylist{
+    list-style-type: none;
+    position:relative;
+    counter-reset: step-counter;/*step1:set counter to 0 */
+
+}
+
+.mylist li{
+    counter-increment: step-counter;
+}
+
+.mylist li::before{
+    position:absolute;
+    content:counter(step-counter);
+    left:-1em;
+    color:orangered;
+    border:1px solid orangered;
+    border-radius:100%;
+    
+}
+
+
+
+.footer-sec1{
+    background-color: black;
+    color:white;
+    text-align: justify;
+     justify-content: space-between;
+
+   
+}
+
+.footer-sec2{
+    background-color: grey;
+  
+    justify-content: space-between;
+}
+
+.left{
+    text-align:justify
+}
+
+.venue{
+    background-color:grey;
+    text-align:center;
+    height:200px;
+    color:aqua;
+    padding-top:10px;
+}
+
+.ven{
+    padding:20px;
+}
+
+
+
+/*Register page styles*/
+.register-main{
+    height:800px;
+    
+}
+
+.reg-form{
+   padding-top:30px;
+   text-align: center;
+    
+   
+}
+
+.h2{
+    text-align: center;
+    padding:40px;
+}
+
+.alert{
+    text-align: center;
+    padding:20px;
+    font-weight: 600;
+    font-size:1.1em;
+  
+}
+
+.reg-form label{
+   display:block;
+}
+
+.button{
+    width:200px;
+    background-color: green;
+    color:white;
+    border-radius: 10px;
+    height:30px;
+}
+
+.star{
+    color:red;
+}
+
+.input{
+    width:300px;
+    height:30px;
+   
+
+}
+
+
+/* Login page styles*/
+.align-center{
+    text-align: center;
+    padding-top:50px;
+}
+
+.login{
+    padding-top: 50px;
+    text-align: center;
+    height:50px;
+
+}
